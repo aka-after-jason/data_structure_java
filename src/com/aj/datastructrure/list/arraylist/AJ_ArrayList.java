@@ -18,6 +18,7 @@ public class AJ_ArrayList<E> extends AbstractList<E> { // 使用泛型
      * 数组所有元素，泛型数组
      */
     private E[] elements;
+
     /**
      * 数组默认容量
      */

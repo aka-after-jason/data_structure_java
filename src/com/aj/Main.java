@@ -7,7 +7,19 @@ import com.aj.datastructrure.list.linkedlist.AJ_TwowayLinkedList;
 import com.aj.datastructrure.list.linkedlist.circle.AJ_SingleCircleLinkedList;
 import com.aj.datastructrure.list.linkedlist.circle.AJ_TwowayCircleLinkedList;
 import com.aj.datastructrure.list.list.List;
+import com.aj.datastructrure.stack.AJStack;
 
+/**
+ * 什么是数据结构？
+ * 数据结构是计算机存储、组织数据的方式
+ *
+ * 线性结构：
+ *          线性表：数组、链表、栈、队列、哈希表
+ * 树形结构：
+ *          二叉树：AVL树、红黑树、B树、堆、Trie、哈希曼树、并查集
+ * 图形结构：
+ *          邻接矩阵、邻接表
+ */
 public class Main {
 
     public static void main(String[] args) {
@@ -55,17 +67,14 @@ public class Main {
         twowayCircleLinkedList.add(twowayCircleLinkedList.size(),20); // [3,1,2,20]
         twowayCircleLinkedList.remove(0);// [1,2,20]
         System.out.println("双向循环链表的使用:" + twowayCircleLinkedList);
+
+        /********************3.栈的测试************************/
+        AJStack<Integer> stack = new AJStack<>();
+        stack.push(1);
+        stack.push(2);
+        while (stack.size() > 0) {
+            System.out.println("栈的测试:" + stack.pop());
+        }
     }
 }
 
-/**
- * 什么是数据结构？
- * 数据结构是计算机存储、组织数据的方式
- *
- * 线性结构：
- *          线性表：数组、链表、栈、队列、哈希表
- * 树形结构：
- *          二叉树：AVL树、红黑树、B树、堆、Trie、哈希曼树、并查集
- * 图形结构：
- *          邻接矩阵、邻接表
- */

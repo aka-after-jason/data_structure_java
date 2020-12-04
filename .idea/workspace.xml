@@ -2,27 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fae25226-f944-4ba5-88f5-02cc76ff003a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/aj/algorithm/sort/bubblesort/AJ_BubbleSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/aj/algorithm/sort/selectionsort/AJ_SelectionSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/aj/datastructrure/list/linkedlist/AJ_SingleLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/aj/datastructrure/list/linkedlist/AJ_SingleLinkedListWithVituralHeadNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/aj/datastructrure/list/linkedlist/AJ_TwowayLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/aj/datastructrure/list/linkedlist/circle/AJ_SingleCircleLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/aj/datastructrure/list/linkedlist/circle/AJ_TwowayCircleLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/aj/datastructrure/list/list/AbstractList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/aj/datastructrure/list/list/List.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/aj/interview/listnode/DeleteNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/aj/interview/listnode/HasCycle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/aj/interview/listnode/ListNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/aj/interview/listnode/ReverseNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/aj/datastructrure/stack/AJStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/aj/interview/stack/BracketIsValid.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/data_structure_java/com/aj/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data_structure_java/com/aj/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data_structure_java/com/aj/array/AJ_ArrayList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data_structure_java/com/aj/complexity/AJ_Complexity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data_structure_java/com/aj/datastructrure/list/arraylist/AJ_ArrayList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data_structure_java/com/aj/datastructrure/list/arraylist/AJ_ArrayList.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/aj/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aj/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/aj/array/AJ_ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aj/datastructrure/list/arraylist/AJ_ArrayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/aj/complexity/AJ_Complexity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aj/datastructrure/complexity/AJ_Complexity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/aj/datastructrure/list/arraylist/AJ_ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aj/datastructrure/list/arraylist/AJ_ArrayList.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +53,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.BracketIsValid">
+    <configuration name="BracketIsValid" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.aj.interview.stack.BracketIsValid" />
+      <module name="data_structure_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.aj.interview.stack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.aj.Main" />
       <module name="data_structure_java" />
@@ -80,6 +79,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BracketIsValid" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -99,7 +99,7 @@
       <workItem from="1605648749062" duration="15000" />
       <workItem from="1606905746533" duration="3480000" />
       <workItem from="1606973505477" duration="13892000" />
-      <workItem from="1607059897550" duration="10041000" />
+      <workItem from="1607059897550" duration="15149000" />
     </task>
     <servers />
   </component>
