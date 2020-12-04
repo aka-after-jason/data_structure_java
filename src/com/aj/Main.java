@@ -1,22 +1,60 @@
 package com.aj;
 
-import com.aj.array.AJ_ArrayList;
+import com.aj.datastructrure.list.arraylist.AJ_ArrayList;
+import com.aj.datastructrure.list.linkedlist.AJ_SingleLinkedList;
+import com.aj.datastructrure.list.linkedlist.AJ_SingleLinkedListWithVituralHeadNode;
+import com.aj.datastructrure.list.linkedlist.AJ_TwowayLinkedList;
+import com.aj.datastructrure.list.linkedlist.circle.AJ_SingleCircleLinkedList;
+import com.aj.datastructrure.list.linkedlist.circle.AJ_TwowayCircleLinkedList;
+import com.aj.datastructrure.list.list.List;
 
 public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        System.out.println("data_structure_java");
+        System.out.println("==============data_structure_java==============");
 
 
         /********************1.动态数组的测试************************/
-        AJ_ArrayList<Object> aj_arrayList = new AJ_ArrayList();
-        aj_arrayList.add(1);
-        aj_arrayList.add(2);
-        aj_arrayList.add("jason");
-        aj_arrayList.add(0,"abc");
-        aj_arrayList.remove(aj_arrayList.size()-1);
-        System.out.println(aj_arrayList.toString());
+        List<Object>  arrayList = new AJ_ArrayList();
+        arrayList.add(0,1);
+        arrayList.add(2);
+        System.out.println("动态数组：" + arrayList.toString());
+
+        /********************2.链表的测试************************/
+        // 单向链表
+        List<Object> linkedList = new AJ_SingleLinkedList<>();
+        linkedList.add(1);
+        linkedList.add(2);
+        System.out.println("单向链表：" + linkedList);
+        // 虚拟节点单向链表的测试
+        List<Object> vituralHeadLinkedList = new AJ_SingleLinkedListWithVituralHeadNode<>();
+        vituralHeadLinkedList.add(1);
+        vituralHeadLinkedList.add(2);
+        System.out.println("虚拟节点单向链表：" + vituralHeadLinkedList);
+        // 单向循环链表
+        List<Object> singleCircleLinkedList = new AJ_SingleCircleLinkedList<>();
+        singleCircleLinkedList.add(1);
+        singleCircleLinkedList.add(2);
+        singleCircleLinkedList.add(0,3);
+        singleCircleLinkedList.add(singleCircleLinkedList.size(),10);// [3,1,2,10]
+        singleCircleLinkedList.remove(0);//[1,2,10]
+        System.out.println("单向循环链表：" + singleCircleLinkedList);
+        // 双向链表
+        List<Object> twowayLinkedList = new AJ_TwowayLinkedList<>();
+        twowayLinkedList.add(1);
+        twowayLinkedList.add(2);
+        twowayLinkedList.add(0,10);
+        twowayLinkedList.add(twowayLinkedList.size(),20);
+        System.out.println("双向链表：" + twowayLinkedList);
+        // 双向循环链表的使用
+        List<Object> twowayCircleLinkedList = new AJ_TwowayCircleLinkedList<>();
+        twowayCircleLinkedList.add(1);
+        twowayCircleLinkedList.add(2);
+        twowayCircleLinkedList.add(0,3);
+        twowayCircleLinkedList.add(twowayCircleLinkedList.size(),20); // [3,1,2,20]
+        twowayCircleLinkedList.remove(0);// [1,2,20]
+        System.out.println("双向循环链表的使用:" + twowayCircleLinkedList);
     }
 }
 

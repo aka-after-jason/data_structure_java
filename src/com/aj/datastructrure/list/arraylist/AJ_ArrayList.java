@@ -1,21 +1,19 @@
-package com.aj.array;
+package com.aj.datastructrure.list.arraylist;
 
 /**
  * @author aka_after_jason
  * @date 12/2/20
  */
 
+import com.aj.datastructrure.list.list.AbstractList;
 
 /**
  * 动态数组的实现
+ * 数组是一种顺序存储的线性表，所有元素的内存地址都是连续的
  */
 @SuppressWarnings("unckecked")
-public class AJ_ArrayList<E> { // 使用泛型
+public class AJ_ArrayList<E> extends AbstractList<E> { // 使用泛型
 
-    /**
-     * 数组中元素的个数
-     */
-    private int size;
     /**
      * 数组所有元素，泛型数组
      */
@@ -24,8 +22,7 @@ public class AJ_ArrayList<E> { // 使用泛型
      * 数组默认容量
      */
     private static final int DEFAULT_CAPACITY = 10;
-    //  元素找不到的标识
-    private static final int ELEMENT_NOT_FOUND = -1;
+
 
     // 构造器
     public AJ_ArrayList(int capacity) {
@@ -48,39 +45,10 @@ public class AJ_ArrayList<E> { // 使用泛型
             elements[i] = null;
         }
         size = 0;
-    }
-
-    /**
-     * 获取数组中元素的数量
-     * @return
-     */
-    public int size() {
-        return  size;
-    }
-
-    /**
-     * 数组是否为空
-     * @return
-     */
-    public boolean isEmpty() {
-        return size == 0;
-    }
-
-    /**
-     * 是否包含某个元素
-     * @param element
-     * @return
-     */
-    public boolean contains(E element) {
-        return indexOf(element) != ELEMENT_NOT_FOUND;
-    }
-
-    /**
-     * 添加元素到数组的尾部
-     * @param element
-     */
-    public void add(E element) {
-        add(size,element);
+        // 仅供参考
+        if (elements != null && elements.length > DEFAULT_CAPACITY) {
+            elements = (E[]) new Object[DEFAULT_CAPACITY];
+        }
     }
 
     /**
@@ -102,6 +70,7 @@ public class AJ_ArrayList<E> { // 使用泛型
     public E set(int index, E element) {
         rangeCheck(index);
         E old = elements[index];
+        elements[index] = element;
         return old;
     }
 
@@ -114,7 +83,7 @@ public class AJ_ArrayList<E> { // 使用泛型
         rangeCheckForAdd(index);
         ensureCapacity(size + 1);
 
-        for (int i = size; i > size; i--) {
+        for (int i = size; i > index; i--) {
             elements[i] = elements[i - 1];
         }
         elements[index] = element;
@@ -133,6 +102,8 @@ public class AJ_ArrayList<E> { // 使用泛型
             elements[i - 1] = elements[i];
         }
         elements[--size] = null;
+        //  动态数组缩容
+        trim();
         return old;
     }
 
@@ -174,31 +145,18 @@ public class AJ_ArrayList<E> { // 使用泛型
     }
 
     /**
-     * 数组越界异常
-     * @param index
+     * 动态数组的缩容
      */
-    private void outOfBounds(int index) {
-        throw new IndexOutOfBoundsException("index:"+index + ",size:" + size);
-    }
-
-    /**
-     * 校验数组越界
-     * @param index
-     */
-    private void rangeCheck(int index) {
-        if (index < 0 || index >= size) {
-            outOfBounds(index);
+    private void trim() {
+        int oldCapacity = elements.length;
+        int newCapacity = oldCapacity >> 1;
+        if (size > newCapacity || oldCapacity <= DEFAULT_CAPACITY) return;
+        E[] newElements = (E[]) new Object[newCapacity];
+        for (int i = 0; i < size; i++) {
+            newElements[i] = elements[i];
         }
-    }
-
-    /**
-     *
-     * @param index
-     */
-    private void rangeCheckForAdd(int index) {
-        if (index < 0 || index > size) {
-            outOfBounds(index);
-        }
+        elements = newElements;
+        System.out.println(oldCapacity + "缩容为" + newCapacity);
     }
 
     /**

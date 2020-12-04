@@ -1,4 +1,4 @@
-package com.aj.complexity;
+package com.aj.datastructrure.complexity;
 
 /**
  * @author aka_after_jason

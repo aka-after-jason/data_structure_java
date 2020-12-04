@@ -2,11 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fae25226-f944-4ba5-88f5-02cc76ff003a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/aj/array/AJ_ArrayList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/aj/complexity/AJ_Complexity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/aj/algorithm/sort/bubblesort/AJ_BubbleSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/aj/algorithm/sort/selectionsort/AJ_SelectionSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/aj/datastructrure/list/linkedlist/AJ_SingleLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/aj/datastructrure/list/linkedlist/AJ_SingleLinkedListWithVituralHeadNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/aj/datastructrure/list/linkedlist/AJ_TwowayLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/aj/datastructrure/list/linkedlist/circle/AJ_SingleCircleLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/aj/datastructrure/list/linkedlist/circle/AJ_TwowayCircleLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/aj/datastructrure/list/list/AbstractList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/aj/datastructrure/list/list/List.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/aj/interview/listnode/DeleteNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/aj/interview/listnode/HasCycle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/aj/interview/listnode/ListNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/aj/interview/listnode/ReverseNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/data_structure_java/com/aj/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data_structure_java/com/aj/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data_structure_java/com/aj/array/AJ_ArrayList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data_structure_java/com/aj/complexity/AJ_Complexity.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/aj/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aj/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/aj/array/AJ_ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aj/datastructrure/list/arraylist/AJ_ArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/aj/complexity/AJ_Complexity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aj/datastructrure/complexity/AJ_Complexity.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +33,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -31,6 +48,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.aj.datastructrure.list.linkedlist.circle" />
+      <recent name="com.aj.datastructrure.list.linkedlist" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -75,7 +98,8 @@
       <workItem from="1605627708060" duration="3422000" />
       <workItem from="1605648749062" duration="15000" />
       <workItem from="1606905746533" duration="3480000" />
-      <workItem from="1606973505477" duration="2961000" />
+      <workItem from="1606973505477" duration="13892000" />
+      <workItem from="1607059897550" duration="10041000" />
     </task>
     <servers />
   </component>
