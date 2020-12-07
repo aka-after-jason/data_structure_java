@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fae25226-f944-4ba5-88f5-02cc76ff003a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/aj/datastructrure/stack/AJStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/aj/interview/stack/BracketIsValid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/aj/datastructrure/queue/AJDeque.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/aj/datastructrure/queue/AJQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/aj/datastructrure/queue/circle/AJCircleDeque.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/aj/datastructrure/queue/circle/AJCircleQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/aj/interview/queue/ImpQueueUsingStack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/data_structure_java/com/aj/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data_structure_java/com/aj/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/data_structure_java/com/aj/datastructrure/list/arraylist/AJ_ArrayList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data_structure_java/com/aj/datastructrure/list/arraylist/AJ_ArrayList.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/aj/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aj/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/aj/datastructrure/list/arraylist/AJ_ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aj/datastructrure/list/arraylist/AJ_ArrayList.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -30,6 +32,7 @@
   <component name="ProjectId" id="1kAjTdZw2dTCBePH3E8a1jrYQEs" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -53,13 +56,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.BracketIsValid">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="BracketIsValid" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.aj.interview.stack.BracketIsValid" />
       <module name="data_structure_java" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.aj.interview.stack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ImpQueueUsingStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.aj.interview.queue.ImpQueueUsingStack" />
+      <module name="data_structure_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.aj.interview.queue.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -79,8 +95,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BracketIsValid" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.ImpQueueUsingStack" />
+        <item itemvalue="Application.BracketIsValid" />
       </list>
     </recent_temporary>
   </component>
@@ -99,7 +116,10 @@
       <workItem from="1605648749062" duration="15000" />
       <workItem from="1606905746533" duration="3480000" />
       <workItem from="1606973505477" duration="13892000" />
-      <workItem from="1607059897550" duration="15149000" />
+      <workItem from="1607059897550" duration="16053000" />
+      <workItem from="1607144887480" duration="2815000" />
+      <workItem from="1607240679303" duration="280000" />
+      <workItem from="1607338554787" duration="5707000" />
     </task>
     <servers />
   </component>

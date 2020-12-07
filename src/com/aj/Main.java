@@ -7,6 +7,10 @@ import com.aj.datastructrure.list.linkedlist.AJ_TwowayLinkedList;
 import com.aj.datastructrure.list.linkedlist.circle.AJ_SingleCircleLinkedList;
 import com.aj.datastructrure.list.linkedlist.circle.AJ_TwowayCircleLinkedList;
 import com.aj.datastructrure.list.list.List;
+import com.aj.datastructrure.queue.AJDeque;
+import com.aj.datastructrure.queue.AJQueue;
+import com.aj.datastructrure.queue.circle.AJCircleDeque;
+import com.aj.datastructrure.queue.circle.AJCircleQueue;
 import com.aj.datastructrure.stack.AJStack;
 
 /**
@@ -75,6 +79,42 @@ public class Main {
         while (stack.size() > 0) {
             System.out.println("栈的测试:" + stack.pop());
         }
+        /********************4.队列的测试************************/
+        // 普通队列
+        AJQueue<Integer> queue = new AJQueue<>();
+        queue.enQueue(1);
+        queue.enQueue(2);
+        while (queue.size() > 0) {
+            System.out.println("队列的测试:" + queue.deQueue());
+        }
+        // 双端队列
+        AJDeque<Integer> deque = new AJDeque<>();
+        deque.enQueueFront(1);
+        deque.enQueueFront(2);
+        deque.enQueueFront(5);
+        deque.enQueueRear(3);
+        deque.enQueueRear(4);
+        System.out.println("从队头移除元素：" + deque.deQueueFront());
+        System.out.println("从队尾移除元素：" + deque.deQueueRear());
+        System.out.println("双端队列：" + deque);
+        System.out.println("获取队头元素：" + deque.front());
+        System.out.println("获取队尾元素：" + deque.rear());
+        // 循环队列
+        AJCircleQueue<Integer> circleQueue = new AJCircleQueue<>();
+        circleQueue.enQueue(1);
+        circleQueue.enQueue(2);
+        circleQueue.deQueue();
+        System.out.println("循环队列：" + circleQueue);
+        // 循环双端队列
+        AJCircleDeque<Integer> circleDeque = new AJCircleDeque<>();
+        circleDeque.enQueueFront(1);
+        circleDeque.enQueueFront(2);
+        circleDeque.enQueueRear(3);
+        circleDeque.enQueueRear(4);
+        System.out.println("循环双端队列：" + circleDeque);
+        System.out.println(circleDeque.deQueueFront());
+        System.out.println(circleDeque.deQueueRear());
+        System.out.println("循环双端队列：" + circleDeque);
     }
 }
 
